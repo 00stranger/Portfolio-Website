@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assinment Details</title>
+	<meta charset="UTF-8">
+	<link type="text/css"  rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}"/>
+	<link type="text/css"  rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-responsive.css') }}"/>
+	<link type="text/css"  rel="stylesheet" href="{{ url_for('static', filename='css/calendar.min.css') }}"/>
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+            <h2>{{assignment.title}}</h2>
+		</div>
+        <div class="contents">
+            <h5>Due Date: </h5><p> {{assignment.due_date}}</p>
+            <h5>Subject:</h5><p>{{assignment.subject_code}}</p>
+            <h4>Description:</h6>
+                <p> {{assignment.description}}</p>
+
+        </div>
+    </div>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+	</div>
+</body>
+</html>
